@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Masculina</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/hint.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+<body>
+    <div>
+        <div class="navbar">
+            <div class="identid">
+                <div class="logo">
+                    <img class="logo" src="./images/logo.png">
+                </div>
+                <div class="titulo-h1">
+                    <h1>Moda Masculina </h1>
+                </div>
+            </div>
+            <div class="controls">
+                <div>
+                    <input type="checkbox" id="btn-modal" class="btnComprar"><label for="btn-modal" class="lbl-modal hint--left hint--success"aria-label="Ver carrito de compras">🛒</label>
+                    <div class="modal">
+                        <div class="contenedor">
+                            <header class="cabeceraModal">
+                                <div class="contenedor-titulo-modal"><h3>Carrito de Compra</h3></div>
+                                <div class="botonesModal">
+                                <div class="contenedor-comprar"><h3 id="comprar"class="vaciar hint--left hint--success"aria-label="Comprar" id="comprar" >💲</h3></div>
+                                <div class="contenedor-vaciar"><h3 id="vaciar" class="vaciar hint--left hint--success"aria-label="Vaciar Carrito">🗑️</h3></div>
+                                <div class="contenedor-cerrar"><label for="btn-modal" class="cerrar-Modal">❌</label></div>
+                            </div>
+                            </header>
+                            <div class="contenidoModal">
+                                <div class="carrito" id="contenedorRenderCarrito"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Menu" class="menu-articulos">
+            <ul>
+                <li id="item"class="inicioLi hint--right hint--success" aria-label="Ir al Inicio"><a href="#" id="inicio"> Inicio</a>
+                </li>
+                <li id="item"><a href="#" id="zapatos">Zapatos</a>
+                </li>
+                <li id="item"><a href="#" id="pantalones">Pantalones</i> </a>
+                </li>
+                <li id="item"><a href="#" id="buzos">Buzos</i></a>
+                </li>
+                <li id="item"><a href="#" id="cardigan">Cardigan</a>
+                </li>
+                <li id="item"><a href="#" id="camisas">Camisas</a>
+                </li>
+            </ul>
+        </div>
+        <main class="main-conteiner">
+            <div class="slider-frame" id="contenedor-slider">
+                <ul>
+                    <li><img src="./images/slider-1.jpg" alt=""></li>
+                    <li><img src="./images/slider-2.jpg" alt=""></li>
+                    <li><img src="./images/slider-3.jpg" alt=""></li>
+                    <li><img src="./images/slider-4.jpg" alt=""></li>
+                </ul>
+            </div>
+            <div class="render" id="contenedoRender"></div>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="./js/app.js"></script>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#">Sobre Nosotros</a></li>
+                            <li><a href="#">Nuestros Servicios</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Seguinos</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f  fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-twitter  fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-instagram  fa-lg"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in  fa-lg  "></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
